@@ -135,26 +135,375 @@ void dibujarTriangulo() {
 	glPopMatrix();
 }
 
-void dibujarCuadrado() {
-	glPushMatrix();
 
-	glTranslatef(posXCuadrado, posYCuadrado, 0.0f);
+void dibujarFigura1(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);//get the current angle
 
-	glBegin(GL_QUADS);
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
 
-	glColor3f(0.7, 0.2, 0.5);
-	glVertex3f(-0.15f, 0.15f, 0.0f);
-	glVertex3f(0.15f, 0.15f, 0.0f);
-	glVertex3f(0.15f, -0.15f, 0.0f);
-	glVertex3f(-0.15f, -0.15f, 0.0f);
+		glColor3f(0.3f, 0.5f, 0.9f);
+		glVertex3f(x + cx, y + cy, 1.0f);
 
+	}
 	glEnd();
-	glPopMatrix();
+}
+
+void dibujarFigura2(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(0.3f, 0.5f, 0.9f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
+}
+
+void dibujarFigura3(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(0.3f, 0.5f, 0.9f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
+}
+
+void dibujarFigura4(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(0.3f, 0.5f, 0.9f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
+}
+
+void dibujarFigura5(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(0.3f, 0.5f, 0.9f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
+}
+
+void dibujarFigura6(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(0.4f, 0.7f, 0.2f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
+}
+
+void dibujarFigura7(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(0.4f, 0.7f, 0.2f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
+}
+
+void dibujarFigura8(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(0.4f, 0.7f, 0.2f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
+}
+
+void dibujarFigura9(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(0.4f, 0.7f, 0.2f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
+}
+
+void dibujarFigura10(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);//get the current angle
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(1.0f, 0.2f, 0.5f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
+}
+
+void dibujarFigura11(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(1.0f, 0.2f, 0.5f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
+}
+
+void dibujarFigura12(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(1.0f, 0.2f, 0.5f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
+}
+
+void dibujarFigura13(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(1.0f, 0.2f, 0.5f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
+}
+
+void dibujarFigura14(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(1.0f, 0.2f, 0.5f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
+}
+
+void dibujarFigura15(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(1.0f, 0.0f, 0.0f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
+}
+
+void dibujarFigura16(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(1.0f, 0.0f, 0.0f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
+}
+
+void dibujarFigura17(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(1.0f, 0.0f, 0.0f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
+}
+
+void dibujarFigura18(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(1.0f, 0.0f, 0.0f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
+}
+
+void dibujarFigura19(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(0.4f, 0.7f, 0.2f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
+}
+
+void dibujarFigura20(float cx, float cy, float r, int num_segments)
+{
+	glBegin(GL_POLYGON);
+	for (int ii = 0; ii < num_segments; ii++)
+	{
+		float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);
+
+		float x = r * cosf(theta);
+		float y = r * sinf(theta);
+
+		glColor3f(1.0f, 0.0f, 0.0f);
+		glVertex3f(x + cx, y + cy, 1.0f);
+
+	}
+	glEnd();
 }
 
 void dibujar() {
-	dibujarCuadrado();
-	dibujarTriangulo();
+
+	
+	dibujarFigura1(0.1, 0.1, 0.05, 3);
+	dibujarFigura2(0.2, 0.2, 0.05, 4);
+	dibujarFigura3(0.3, 0.3, 0.05, 5);
+	dibujarFigura4(0.4, 0.4, 0.05, 6);
+	dibujarFigura5(0.5, 0.5, 0.05, 7);
+	dibujarFigura6(0.6, 0.6, 0.05, 8);
+	dibujarFigura7(0.7, 0.7, 0.05, 9);
+	dibujarFigura8(0.8, 0.8, 0.05, 10);
+	dibujarFigura9(0.9, 0.9, 0.05, 100);
+
+	dibujarFigura10(-0.1, -0.1, 0.05, 3);
+	dibujarFigura11(-0.2, -0.2, 0.05, 4);
+	dibujarFigura12(-0.3, -0.3, 0.05, 5);
+	dibujarFigura13(-0.4, -0.4, 0.05, 6);
+	dibujarFigura14(-0.5, -0.5, 0.05, 7);
+	dibujarFigura15(-0.6, -0.6, 0.05, 8);
+	dibujarFigura16(-0.7, -0.7, 0.05, 9);
+	dibujarFigura17(-0.8, -0.8, 0.05, 10);
+	dibujarFigura18(-0.9, -0.9, 0.05, 100);
+
+	dibujarFigura19(0.1, -0.1, 0.05, 11);
+	dibujarFigura20(-0.1, 0.1, 0.05, 11);
+
+
+	//dibujarTriangulo();
 }
 
 int main()
@@ -205,7 +554,7 @@ int main()
 		glViewport(0, 0, 600, 600);
 		//Establecemos el color de borrado
 		//Valores RGBA
-		glClearColor(1, 0.8, 0, 1);
+		glClearColor(0.0f, 0.0f, 0.0f, 1);
 		//Borrar!
 		glClear(GL_COLOR_BUFFER_BIT | 
 			GL_DEPTH_BUFFER_BIT);
